@@ -124,7 +124,7 @@ Product addpt = (Product) session.load(Product.class, id);
 session.delete(addpt);  
 tx.commit();  
 Serializable ids = session.getIdentifier(addpt);  
-session.close();  
+session.close();  0
 return (Integer) ids;  
 }
 
